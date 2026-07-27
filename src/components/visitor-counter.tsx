@@ -27,14 +27,11 @@ export function VisitorCounter({ className = "", size = "sm" }: VisitorCounterPr
 
     if (size === "lg") {
         return (
-            <a
-                href="https://www.freevisitorcounters.com/en/home/stats/id/1383063"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div
                 aria-label="Live visitor stats"
                 title="Live visitor stats"
                 className={
-                    "group relative flex flex-wrap items-center gap-5 rounded-2xl border border-border/70 bg-surface/80 px-6 py-4 shadow-soft backdrop-blur-md transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-elevated " +
+                    "group relative flex flex-wrap items-center gap-5 rounded-2xl border border-border/70 bg-surface/80 px-6 py-4 shadow-soft backdrop-blur-md " +
                     className
                 }
             >
@@ -53,19 +50,16 @@ export function VisitorCounter({ className = "", size = "sm" }: VisitorCounterPr
                 <Stat icon={Eye} label="Today" value={data ? formatNumber(today) : "—"} />
                 <span className="hidden h-8 w-px bg-border/80 sm:block" aria-hidden />
                 <Stat icon={Users} label="All time" value={data ? formatNumber(all) : "—"} />
-            </a>
+            </div>
         );
     }
 
     return (
-        <a
-            href="https://www.freevisitorcounters.com/en/home/stats/id/1383063"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div
             aria-label="Live visitor counter"
             title={data ? `${formatNumber(online)} online · ${formatNumber(all)} all time` : "Live visitors"}
             className={
-                "group relative inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface/70 px-3 py-1.5 text-xs font-medium text-foreground shadow-soft backdrop-blur-md transition hover:-translate-y-0.5 hover:border-accent/60 hover:shadow-elevated " +
+                "group relative inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface/70 px-3 py-1.5 text-xs font-medium text-foreground shadow-soft backdrop-blur-md " +
                 className
             }
         >
@@ -79,7 +73,7 @@ export function VisitorCounter({ className = "", size = "sm" }: VisitorCounterPr
             </span>
             <span className="h-4 w-px bg-border/80" aria-hidden />
             <span className="tabular-nums">{data ? formatNumber(all) : "—"}</span>
-        </a>
+        </div>
     );
 }
 
