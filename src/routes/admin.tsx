@@ -7,6 +7,7 @@ import {
   useRouterState,
 } from "@tanstack/react-router";
 import {
+  Bot,
   Loader2,
   LogOut,
   Megaphone,
@@ -71,6 +72,7 @@ const items: { to: string; label: string; icon: typeof Megaphone; exact?: boolea
   { to: "/admin/feedback", label: "Feedback", icon: MessageSquareHeart },
   { to: "/admin/users", label: "Users", icon: Users },
   { to: "/admin/team", label: "Team", icon: UsersRound },
+  { to: "/admin/agent", label: "Agent", icon: Bot },
 ];
 
 function AdminLayout() {
