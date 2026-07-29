@@ -13,6 +13,7 @@ import {
   Megaphone,
   MessageSquareHeart,
   Users,
+  CalendarClock,
   UsersRound,
   UserSquare2,
   Waves,
@@ -73,6 +74,7 @@ const items: { to: string; label: string; icon: typeof Megaphone; exact?: boolea
   { to: "/admin/users", label: "Users", icon: Users },
   { to: "/admin/team", label: "Team", icon: UsersRound },
   { to: "/admin/agent", label: "Agent", icon: Bot },
+  { to: "/admin/sync-timetable", label: "Sync Timetable", icon: CalendarClock },
 ];
 
 function AdminLayout() {
