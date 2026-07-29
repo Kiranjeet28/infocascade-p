@@ -69,10 +69,10 @@ export const Route = createFileRoute("/admin")({
 
 const items: { to: string; label: string; icon: typeof Megaphone; exact?: boolean }[] = [
   { to: "/admin/notices", label: "Notices", icon: Megaphone },
-  { to: "/admin/hiring", label: "Hiring", icon: UserSquare2 },
+  // { to: "/admin/hiring", label: "Hiring", icon: UserSquare2 },
   { to: "/admin/feedback", label: "Feedback", icon: MessageSquareHeart },
   { to: "/admin/users", label: "Users", icon: Users },
-  { to: "/admin/team", label: "Team", icon: UsersRound },
+  // { to: "/admin/team", label: "Team", icon: UsersRound },
   { to: "/admin/agent", label: "Agent", icon: Bot },
   { to: "/admin/sync-timetable", label: "Sync Timetable", icon: CalendarClock },
 ];
